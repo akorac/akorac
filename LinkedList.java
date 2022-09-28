@@ -1,3 +1,5 @@
+// code presenting LinkedList assignment 
+
 public class LinkedList<T>
     {
         protected LLNode<T> list;
@@ -49,7 +51,7 @@ public class LinkedList<T>
 
             addNode.setLink(ak.getLink());
             ak.setLink(addNode);
-            //TODO Complete this method as required in the homework instructions
+            
         }
 
         public void removeFirst()
@@ -61,7 +63,7 @@ public class LinkedList<T>
             LLNode<T> ak = list;
             list = ak.getLink();
             ak.setLink(null);
-            //TODO Complete this method as required in the homework instructions
+        
         }
 
         public void removeLast()
@@ -80,7 +82,7 @@ public class LinkedList<T>
                 ak = ak.getLink();
             }
             ak.setLink(null);
-            //TODO Complete this method as required in the homework instructions
+           
         }
 
         public int size() {
@@ -96,13 +98,13 @@ public class LinkedList<T>
                 ak = ak.getLink();
             }
             return size;
-            //TODO Complete this method as required in the homework instructions
+        
         }
 
         public boolean isEmpty()
         {
             return size() == 0;
-            //TODO Complete this method as required in the homework instructions
+        
         }
 
         public boolean contains(T item)
@@ -119,7 +121,7 @@ public class LinkedList<T>
                 ak = ak.getLink();
             }
             return false;
-            //TODO Complete this method as required in the homework instructions
+           
 
         }
 
